@@ -1,0 +1,29 @@
+/* Tag Based Selector */
+h5 {
+  color: brown;
+  text-decoration: underline;
+}
+
+p {
+  background-color: aqua;
+}
+
+article {
+  background-color: cornflowerblue;
+}
+
+/* Class Based Selector */
+.overline-style {
+  text-decoration: line-through;
+}
+
+/* Id Based Selector */
+#btn-login {
+  background-color: green;
+}
+
+#inline-para {
+  color: blue; 
+  background-color: aqua; 
+  font-size: large;
+}

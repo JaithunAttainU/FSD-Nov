@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Css Introduction</title>
+  <link href="style.css" rel="stylesheet" />
+
+  <!-- Internal Css -->
+  <style>
+    /* selector {
+      property: value
+    } */
+
+    /* Tag Based Selector */
+    h5 {
+      color: chartreuse;
+      text-decoration: underline;
+    }
+
+    p {
+      background-color: aqua;
+    }
+
+    article {
+      background-color: cornflowerblue;
+    }
+  </style>
+  <link rel="stylesheet" href="../Day-2/style.css" />
+
+
+</head>
+
+<body style="background-color: aquamarine;">
+
+  <h1 style="color: red;">Css Introduction</h1>
+
+  <!-- Only one tag should have the id btn-login (Unique) -->
+  <button id="btn-login">Login</button>
+
+  <!-- Inline Css. This should not be a preferred method -->
+  <p id="inline-para" style="color: blue; background-color: aqua; font-size: large;">Lorem ipsum dolor sit amet
+    consectetur, adipisicing
+    elit. Unde vero,
+    doloremque, ipsam
+    officiis praesentium
+    repudiandae cupiditate iure quae omnis porro ab provident eius dolor maiores amet, odio veritatis et eveniet.</p>
+
+  <article>
+    <section>
+      <h5 style="color: black;">Section 1</h5>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus architecto adipisci deserunt asperiores quod,
+        nihil recusandae nisi. Distinctio quam explicabo, quaerat reiciendis voluptas commodi earum iste maxime harum
+        expedita laboriosam.</p>
+    </section>
+    <section>
+      <h5 class="overline-style">
+        Section 2
+      </h5>
+      <p class="overline-style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus architecto
+        adipisci deserunt asperiores quod,
+        nihil recusandae nisi. Distinctio quam explicabo, quaerat reiciendis voluptas commodi earum iste maxime harum
+        expedita laboriosam.</p>
+    </section>
+    <section>
+      <h5>Section 3</h5>
+      <p class="overline-style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus architecto
+        adipisci deserunt asperiores quod,
+        nihil recusandae nisi. Distinctio quam explicabo, quaerat reiciendis voluptas commodi earum iste maxime harum
+        expedita laboriosam.</p>
+    </section>
+  </article>
+</body>
+
+</html>
+
+<!-- 
+1) Inline Css
+2) Internal Css
+3) External Css -->
