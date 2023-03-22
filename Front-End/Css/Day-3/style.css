@@ -1,0 +1,73 @@
+
+#box-model {
+  border: 2px solid rgb(227, 12, 12);
+  margin: auto;
+  /* To bring block level elements to center */
+  width: 50%;
+  /* width will modify the widht of the content alone */
+  padding: 10px;
+
+  text-align: center;
+}
+
+#para-style {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+  text-decoration: dotted;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: capitalize;
+
+  text-indent: 50px;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  line-height: 30px;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+}
+
+.btn-success {
+  background-color: lightgreen;
+}
+
+.btn-delete {
+  background-color: red;
+}
+
+#login {
+  background-color: green;
+}
+
+#signup {
+  background-color: blue;
+}
+
+/* Multi Element Selector */
+section, #h4-div, p {
+  border: 2px solid black;
+  margin: 2px;
+}
+
+
+#h4-div {
+  color: blue;
+}
+
+/* All Child Selector */
+article p {
+ background-color: lightcoral;
+}
+
+/* Immediate Child Selector */
+article>p{
+  background-color: red;
+}
+
+
+/* 
+MultiElement Selector
+Child Selector
+Immediate Child Selector */

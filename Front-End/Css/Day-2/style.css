@@ -19,14 +19,15 @@ h3 {
 #box {
   width: 50vw;
   height: 50vh;
-  background-color: rgba(32, 27, 166, 0.561);
+  background-color: rgba(29, 28, 80, 0.561);
   background-color: #712b2b;
+  /* 00 to ff */
 }
 
 
 #box-model {
   /* border-style: solid;  */
-   /* //top right bottom left - dashed solid double dotted */
+  /* //top right bottom left - dashed solid double dotted */
 
   /* border-left-style: solid;
   border-right-style: dashed;
@@ -41,7 +42,7 @@ h3 {
 
   border-radius: 3px;
 
-  border: 2px solid red;
+  border: 2px solid rgb(227, 12, 12);
   /* border-left-width: 3px; */
 
   margin: 2px 4px 6px 8px;
