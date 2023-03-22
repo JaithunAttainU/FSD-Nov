@@ -1,4 +1,54 @@
 h5 {
-  color: pink;
+  color: green;
   text-decoration: underline;
+}
+
+
+#para-style {
+  font-size: 20px;
+}
+
+#para-span {
+  font-size: 2rem;
+  color: rgb(255, 192, 203)
+}
+
+h3 {
+  width: 50vw;
+}
+#box {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgba(32, 27, 166, 0.561);
+  background-color: #712b2b;
+}
+
+
+#box-model {
+  /* border-style: solid;  */
+   /* //top right bottom left - dashed solid double dotted */
+
+  /* border-left-style: solid;
+  border-right-style: dashed;
+  border-top-style: double;
+  border-bottom-style: dotted; */
+
+  /* border-width: 2px 5px 7px 9px;
+
+  border-color: red;
+
+  border-left-color: black; */
+
+  border-radius: 3px;
+
+  border: 2px solid red;
+  /* border-left-width: 3px; */
+
+  margin: 2px 4px 6px 8px;
+
+  /* margin-right: 4px;
+  margin-left: 8px; */
+
+  padding: 4px;
+  padding-left: 8px;
 }
