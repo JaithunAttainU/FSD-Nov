@@ -1,0 +1,69 @@
+a {
+  display: block;
+}
+
+p{
+  display: inline;
+}
+
+.container {
+  background-color: lightblue;
+  margin: 5px;
+  padding: 5px;
+  width: 50%;
+}
+
+.top-parent {
+  background-color: greenyellow;
+  position: relative;
+
+  width: 75%;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  margin: 3px;
+  padding: 5px;
+  border: 2px solid;
+}
+
+.box-1 {
+  position: fixed;
+
+  /* bottom: 30px; */
+  top: 30px;
+
+  right: 30px;
+  /* left: 50px; */
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.box-3 {
+  position: absolute;
+  background-color: lightcoral;
+  opacity: 0.5;
+
+  right:60px;
+  top: 70px;
+}
+
+
+.box-5{
+  position: relative;
+  background-color: brown;
+  opacity: 0.5;
+/* 
+  bottom: 30px;
+  left: 20px; */
+}
+
+.box-6 {
+  position: sticky;
+  background-color: teal;
+  opacity: 0.5;
+
+  top: 0px;
+}
