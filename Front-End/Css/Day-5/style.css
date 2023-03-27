@@ -1,0 +1,29 @@
+h1, img {
+  background-color:lightcoral;
+  width: 50%;
+
+  box-shadow: 5px 5px 0px 1px grey, 6px 6px 0px grey, 7px 7px 0px  grey, 8px 8px 0px  grey, 9px 9px 0px grey;
+  text-shadow: 3px 3px 2px grey;
+}
+
+/* #box:hover {
+  background-color: red;
+  width: 200px;
+  transform: translate(100px, 100px) rotate(45deg);
+} */
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: auto;
+
+  background-image: repeating-conic-gradient(pink, red, brown 10%);
+  
+  /* transition: all 5s; */
+  /* transition: background-color 5s linear 3s, width 5s ease-in 1s; */
+  /* transition: all 5s linear; */
+
+  /* transform: scale(1, 1); */
+  /* transform: skew(2deg, 2deg) rotate(45deg) scale(1, 1); */
+}
