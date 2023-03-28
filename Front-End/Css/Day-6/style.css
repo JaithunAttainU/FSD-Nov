@@ -1,0 +1,41 @@
+.flex-container {
+ background-color: teal;
+ padding: 2px;
+ display: flex;
+ height: 500px;
+ /* width: 50%; */
+ /*Change the direction of main-axis*/
+ /* flex-direction: column;
+ flex-wrap: wrap-reverse; */
+
+ /*Default value - flex-direction flex-wrap */
+ flex-flow: row wrap;
+
+ /*
+ flex-start - MAIN-START
+ flex-end - main-end
+ */
+ justify-content: space-between;
+
+ /*Works along the cross axis
+ flex-start - cross-start
+ flex-end - cross-end*/
+ /* align-items: baseline; */
+ align-content: space-around;
+}
+
+.flex-items {
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+  background-color: red;
+}
+
+
+.item-2 {
+  /* font-size: 30px; */
+}
+
+.item-3{
+  /* font-size: 10px; */
+}
