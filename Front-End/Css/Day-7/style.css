@@ -1,0 +1,36 @@
+.flex-container {
+ background-color: teal;
+ padding: 2px;
+ display: flex;
+ height: 500px;
+ /* width: 50%; */
+ flex-flow: row nowrap;
+ justify-content: flex-start;
+ align-items: flex-start;
+
+}
+
+.flex-items {
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+  flex-shrink: 1;
+  /* flex-grow: 1; */
+  flex: 0 1 auto;
+  background-color: blue;
+}
+
+
+.item-2 {
+  /* font-size: 30px; */
+  /* flex-grow: 2;
+  flex-shrink: 2; */
+  flex-basis: content;
+  align-self: center;
+  order: -7;
+}
+
+.item-3{
+  /* flex-shrink: 4; */
+  /* font-size: 10px; */
+}
