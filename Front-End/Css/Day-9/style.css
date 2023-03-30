@@ -1,0 +1,22 @@
+
+
+.accordion-bg {
+  background-color: gray;
+  padding: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card-container .card {
+  margin: 10px;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
