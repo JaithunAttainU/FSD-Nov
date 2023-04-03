@@ -27,24 +27,4 @@ function clickBtnEventListener() {
 
   //2. Insert the created Element inside dom
   bodyElement.append(divElement) //<body><div>Hello</div></body>
-
 }
-
-const bird = {
-  size: 'small',
-};
-
-
-
-const mouse = {
-  name: 'Mickey',
-  small: true,
-};
-
-mouse.name = 'Mickey'
-mouse["name"] = "Mickey"
-
-mouse.bird.size is not valid
-mouse[bird.size] is not valid - correct
-
-mouse[bird["size"]] - mouse["small"] - correct

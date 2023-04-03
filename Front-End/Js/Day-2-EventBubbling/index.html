@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Event Bubbling</title>
+  <link href="./style.css" rel="stylesheet" />
+  <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Event Bubbling -->
+  <div id="grandparent" class="box">
+    <div id="parent" class="box">
+      <div id="child" class="box">
+      </div>
+    </div>
+  </div>
+
+
+  <form id="user-form" class="box">
+    <input id="name-input" name="username" />
+    <input type="submit" />
+  </form>
+
+  <a id="anchor-tag" href="https://www.google.com">Go to Google</a>
+  <a id="anchor-tag" href="https://www.google.com">Go to Google</a>
+</body>
+
+</html>
+
+<!-- 
+Event Bubbling
+Prevent Default - Forms
+
+Selectors
+ClassName
+TagName
+querySelector
+querySelectorAll -->
