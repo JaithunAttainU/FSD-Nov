@@ -53,7 +53,7 @@ async function getUsersClickListenerAsyncAwait() {
 
   try {
     const responseObj = await fetch('https://api.unsplash.com/photos', {
-      method: 'GET',
+      method: 'DELETE',
       headers: {
         // "Accept": "application/json",
         "Authorization": "Client-ID hLmVINqlRfkS_LLQ-cwCuXqawI_pxJDJY4WrRXqr5bk"
