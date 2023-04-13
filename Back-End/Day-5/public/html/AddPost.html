@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Post</title>
+</head>
+
+<body>
+  <form action="http://localhost:8000/posts" method="post">
+    <div>
+      <label for="title">Title:</label><input id="title" type="text" name="title" />
+    </div>
+    <div>
+      <label for="body">Body:</label><textarea rows="5" cols="40" name="body" id="body"></textarea>
+    </div>
+    <button type="submit">Add Post</button>
+  </form>
+
+  <!-- <script>
+    const titleElement = document.getElementById('title')
+    const bodyElement = document.getElementById('body')
+
+    async function onAddPostBtnClick() {
+      const title = titleElement.value
+      const body = bodyElement.value
+
+      const response = await fetch('http://localhost:8000/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          title: title,
+          body: body,
+          id: 102,
+          userId: 3
+        })
+      })
+
+      //Converting stream from body to actual data
+      const data = await response.json()
+      console.log(data)
+    }
+  </script> -->
+</body>
+
+</html>
