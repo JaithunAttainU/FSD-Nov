@@ -1,0 +1,5 @@
+GET /posts 304 - - 6.603 ms
+POST /users 400 68 - 22.374 ms
+POST /users 400 68 - 19.430 ms
+::1 - - [14/Apr/2023:16:43:41 +0000] "GET /posts HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+::1 - - [14/Apr/2023:16:44:02 +0000] "POST /users HTTP/1.1" 400 68 "-" "PostmanRuntime/7.29.2"

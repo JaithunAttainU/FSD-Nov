@@ -3,6 +3,7 @@ const posts = require('../mock/posts')
 
 const getAllPosts = (request, response) => {
   //Check the authentication
+  //logging
   console.log("Posts Get called triggered")
 
   let filteredPosts = posts
@@ -65,6 +66,8 @@ const deletePost = (request, response) => {
 const addPost = (request, response) => {
   //Check the authentication
   //Get the data and add the posts
+
+  //validate
   const newPostData = request.body
   if (newPostData) {
     posts.push(newPostData)
