@@ -1,0 +1,46 @@
+//To list all databases
+show databases;
+show dbs;
+
+//To select/create a database
+use databaseName;
+
+//To view all collections in database
+show collections;
+
+//To insert one document in a collection
+db.collectionName.insertOne({name: 'Mujeeb', address: 'Karnata'})
+
+//To insert multiple documents in a collection
+db.collectionName.insertMany([{}, {}, {}])
+
+//To list all documents in a collection
+db.collectionName.find()
+
+//to list all documents matching the criteria given
+db.collectionName.find({age: 25})
+
+//to find one document matching the criteria given
+db.collectionName.findOne({age: 25, name: 'karan'})
+
+//to add/edit a key in one document(Updating the document)
+db.collectionName.updateOne({name: 'Mujeeb', address: 'Karnata'}, {$set: {mobile: '12345', favColor: 'red'}} )
+
+//to delete a key in one document(Updating the document)
+db.collectionName.updateOne({name: 'Mujeeb', address: 'Karnata'}, {$unset: {mobile: 1}} )
+
+//To update multiple documents
+db.collectionName.updateMany({address: 'Delhi'}, {$set: {favColor: 'black'}})
+
+//To delete multiple documents
+db.collectionName.deleteMany({age: 25, name: 'abc'})
+
+//To delete one document
+db.collectionName.deleteOne({favColor: 'black'})
+
+//Projections
+db.collectionName.find({age: 24}, {name: 1, age: 1, dob: 1, _id: 0})
+
+//$in
+db.customers.find({favMovies: {$in: ["The Black"]}})
+
