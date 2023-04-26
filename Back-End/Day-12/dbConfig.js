@@ -6,6 +6,9 @@ async function initDB(collectionName) {
   console.log(process.env.MONGO_URL)
   const client = new MongoClient(process.env.MONGO_URL);
 
+  //1)Connect
+  //2)Mention DB Name
+  //3)Mention CollectionName
   try {
     await client.connect()
     console.log('Connected successfully to Database');
