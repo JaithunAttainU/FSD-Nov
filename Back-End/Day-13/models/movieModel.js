@@ -4,7 +4,7 @@ const { Schema, model } = require('mongoose')
 const movieSchema = new Schema({
   name: {
     type: String,
-    required: true,
+    required: [true, 'Please give a valid name to add a movie'],
     unique: true,
     maxLength: 25,
     minLength: 3
@@ -13,7 +13,10 @@ const movieSchema = new Schema({
     type: Date,
     default: Date.now()
   },
-  language: String,
+  language: {
+    type: String,
+    enum: ['English', 'Hindi']
+  },
   cast: [String],
   rating: {
     type: Number,
