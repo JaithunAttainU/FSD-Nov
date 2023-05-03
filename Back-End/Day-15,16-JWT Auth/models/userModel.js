@@ -15,7 +15,15 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minLength: 5
+  },
+  isAdmin: {
+    type: Boolean,
+    default: false
   }
+  // roles: {
+  //   type: [String],
+  //   enum: ['Students', 'Instructors']
+  // }
 })
 
 const UserModel = model('users', userSchema)
