@@ -1,7 +1,7 @@
 const MovieModel = require("../models/movieModel")
 
 const getMovies = async (request, response) => {
-  const { releaseYear, name, genre } = request.query
+  const { releaseYear, name, genre, page = 1, pageSize = 5 } = request.query
 
   const conditions = {}
 
@@ -18,7 +18,7 @@ const getMovies = async (request, response) => {
   }
 
   try {
-    const movies = await MovieModel.find(conditions)
+    const movies = await MovieModel.find(conditions).skip((page - 1) * pageSize).limit(pageSize)
     response.send({ status: 'success', movies })
   } catch (error) {
     console.log("Error fetching movies from DB")
