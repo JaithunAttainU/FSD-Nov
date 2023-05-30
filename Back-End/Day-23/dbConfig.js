@@ -24,3 +24,14 @@ async function initDB() {
 module.exports = {
   sequelize, initDB
 }
+
+class Person {
+  constructor() {
+    this.name = 'Hello';
+  }
+
+  getName() {
+    return this.name
+  }
+
+}

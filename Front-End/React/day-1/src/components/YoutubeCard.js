@@ -1,11 +1,20 @@
 import React from "react";
-function YoutubeCard() {
-  return (
-    <>
-      <h1>YoutubeCard Component</h1>
-      {/* <Thumbnail />
-      <Details /> */}
-    </>
+import Thumbnail from "./Thumbnail";
+import Details from "./Details";
+
+function YoutubeCard(props) {
+  //<React.Fragment>
+
+  const { videoInfo } = props
+
+  //Props are read-only
+  // props.videoInfo = 'sdfsrg'
+  console.log(props)
+  return ( //JSX
+    <div className="card w-50">
+      <Thumbnail imageUrl={videoInfo.imageUrl} />
+      <Details videoInfo={videoInfo} />
+    </div>
   )
 }
 
