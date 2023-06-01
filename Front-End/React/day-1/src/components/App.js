@@ -1,6 +1,8 @@
 import React from "react";
 import YoutubeCard from "./YoutubeCard";
 import videoData from "../mock/videoData";
+import CartCounter from "./CartCounter";
+import CartCounterFunc from "./CartCounterFunc";
 
 //functional Component
 function App() {
@@ -15,10 +17,16 @@ function App() {
   return (
     <>
       {/* {batchName === 'FSD-Nov' ? `Hello ${batchName}` : ''} */}
-      <h1>App Component</h1>
+
+      {/* <div className="d-flex">
       {videoData.map((video) => {
         return <YoutubeCard videoInfo={video} />
       })}
+      </div> */}
+
+      <CartCounterFunc />
+      {/* <CartCounter />
+      <CartCounter /> */}
     </>
   )
 }

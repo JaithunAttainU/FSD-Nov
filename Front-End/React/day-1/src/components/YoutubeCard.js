@@ -11,7 +11,7 @@ function YoutubeCard(props) {
   // props.videoInfo = 'sdfsrg'
   console.log(props)
   return ( //JSX
-    <div className="card w-50">
+    <div className="card w-25 m-2">
       <Thumbnail imageUrl={videoInfo.imageUrl} />
       <Details videoInfo={videoInfo} />
     </div>
