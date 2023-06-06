@@ -5,9 +5,24 @@ import UserInfo from './UserInfo'
 
 function UsersListFunc() {
 
-  // users: [],
-  // selectUserId: null,
-  // selectedUserInfo: null
+  //Rules of Hooks(Below samples are not allowed)
+  // if (true) {
+  //   const [users, setUsers] = useState([])
+
+  // } else {
+
+  // }
+
+  // for (let index = 0; index < array.length; index++) {
+  //   const element = array[index];
+  //   const [users, setUsers] = useState([])
+
+  // }
+
+  // function dummy() {
+  //   const [users, setUsers] = useState([])
+  // }
+
   const [users, setUsers] = useState([])
   const [selectUserId, setSelectUserId] = useState()
   const [selectedUserInfo, setSelectedUserInfo] = useState()
@@ -27,6 +42,16 @@ function UsersListFunc() {
   //componentDidMount - give [] as dependency list, only on first render
   useEffect(() => {
     fetchUser()
+
+    const intervalId = setInterval(() => {
+      console.log("Interval is called")
+    }, 2000)
+
+    //ComponentWillUnMount - executed when the component is unmounted.
+    return () => {
+      console.log("Component Unmounted")
+      clearInterval(intervalId)
+    }
   }, [])
 
   //componentDidUpdate - give [selectUserId] as dependency list, on first render and every time selected user is changed
@@ -36,6 +61,14 @@ function UsersListFunc() {
     }
   }, [selectUserId])
 
+  //componentDidUpdate - executed on every render
+  // useEffect(() => {
+  //   fetchUser()
+  // })
+
+  //ComponentWillUnMount - useEffect Hooks
+  //Rules of Hooks
+  //Develop a project
   return (
     <>
       <div className='text-center'>UsersList</div>
