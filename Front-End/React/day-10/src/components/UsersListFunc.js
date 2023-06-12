@@ -6,14 +6,23 @@ import { fetchUsers, selectUserAction } from '../actions'
 
 
 function UsersListFunc() {
+  // const [usersList, setUsersList] = useState([])
 
   const users = useSelector(state => {
     return state.users
   })
   const dispatch = useDispatch()
 
+
+  // const fetchUser = async () => {
+  //   const userResponse = await fetch('https://jsonplaceholder.typicode.com/users')
+  //   const usersData = await userResponse.json()
+  //   setUsersList(usersData)
+  // }
+
   useEffect(() => {
-    dispatch(fetchUsers())
+    // await fetchUser()
+    dispatch(fetchUsers()) //{type: , payload: } //promises
   }, [])
 
   const selectUser = (user) => {

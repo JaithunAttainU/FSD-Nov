@@ -1,5 +1,5 @@
 //Action creators which are function that retrun action objects {type: '', payload: data}
-
+import axios from 'axios'
 export const selectUserAction = (user) => {
   return {
     type: 'SELECT_USER',
@@ -8,7 +8,11 @@ export const selectUserAction = (user) => {
 }
 
 export const fetchUsers = () => {
-  return {
-    type: 'FETCH_USERS',
+  return async function (dispatch, getState) {
+    const usersRes = await axios.get('https://jsonplaceholder.typicode.com/users')
+    dispatch({
+      type: 'FETCH_USERS',
+      payload: usersRes.data
+    })
   }
 }
