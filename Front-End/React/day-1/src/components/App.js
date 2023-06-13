@@ -1,6 +1,8 @@
-import React from "react";
+import React, { createContext } from "react";
 import YoutubeCard from "./YoutubeCard";
 import videoData from "../mock/videoData";
+
+export const VideoContext = createContext()
 
 //functional Component
 function App() {
@@ -18,7 +20,13 @@ function App() {
 
       <div className="d-flex">
       {videoData.map((video) => {
-        return <YoutubeCard videoInfo={video} />
+        return (
+          <>
+            <VideoContext.Provider value={video}>
+              <YoutubeCard />
+            </VideoContext.Provider>
+          </>
+        )
       })}
       </div>
     </>
